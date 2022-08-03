@@ -5,7 +5,7 @@ let socket;
 export const init = () => {
 	console.log("Connecting...");
 
-	socket = io("redis://:p833c1d5457abda96b032eb6ac10764b39e087bf7cf2b7b4f805e1eec7ef4812d@ec2-52-211-91-28.eu-west-1.compute.amazonaws.com:13750", {
+	socket = io("localhost:3000", {
 		transports: ["websocket"],
 	});
 
